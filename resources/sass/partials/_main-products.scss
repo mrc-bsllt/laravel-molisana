@@ -20,9 +20,10 @@ main {
   @include flexSet(row, flex-start, stretch);
 
   .card-container {
+    position: relative;
     width: calc(100% / 3);
-    height: 300px;
-    padding: 5px;
+    height: $cardsHeight;
+    padding: $cardsPadding;
 
     img {
       width: 100%;
@@ -30,6 +31,32 @@ main {
       object-fit: cover;
       object-position: center;
     }
+    .layover {
+      position: absolute;
+      top: $cardsPadding;
+      left: $cardsPadding;
+      width: calc(100% - #{$cardsPadding * 2});
+      height: calc(100% - #{$cardsPadding * 2});
+      background-color: rgba($lightBlueColor, 0.7);
+      opacity: 0;
+      transition: all 0.3s linear;
 
+      &:hover {
+        opacity: 1;
+      }
+
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: $cardsHeight;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
   }
+
 }

@@ -12,6 +12,9 @@
         @foreach($section["type"] as $card)
         <div class="card-container">
           <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
+          <div class="layover">
+            <a href="#">{{ $card["titolo"] }}</a>
+          </div>
         </div>
         @endforeach
       </div>
