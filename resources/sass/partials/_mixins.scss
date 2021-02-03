@@ -1,0 +1,13 @@
+@mixin bgImageSet($url, $ext, $repeat, $size, $position) {
+  background-image: url("../img/#{$url}.#{$ext}");
+  background-repeat: $repeat;
+  background-size: $size;
+  background-position: $position;
+}
+@mixin flexSet($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: wrap;
+}

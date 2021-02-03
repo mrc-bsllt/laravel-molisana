@@ -138,5 +138,23 @@ Route::get('/', function () {
       ]
   ];
 
-  return view('products');
+  $lunghe = [];
+  $corte = [];
+  $cortissime = [];
+
+  foreach ($data as $pasta) {
+    if($pasta["tipo"] == "lunga") {
+      $lunghe[] = $pasta;
+    } elseif($pasta["tipo"] == "corta") {
+      $corte[] = $pasta;
+    } elseif($pasta["tipo"] == "cortissima") {
+      $cortissime[] = $pasta;
+    }
+  }
+
+  return view('products', [
+    "lunghe" => $lunghe,
+    "corte" => $corte,
+    "cortissime" => $cortissime
+  ]);
 });
