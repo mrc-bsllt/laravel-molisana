@@ -153,8 +153,19 @@ Route::get('/', function () {
   }
 
   return view('products', [
-    "lunghe" => $lunghe,
-    "corte" => $corte,
-    "cortissime" => $cortissime
+    "types" => [
+      [
+        "title" => "lunghe",
+        "type" => $lunghe
+      ],
+      [
+        "title" => "corte",
+        "type" => $corte
+      ],
+      [
+        "title" => "cortissime",
+        "type" => $cortissime
+      ],
+    ]
   ]);
 });
