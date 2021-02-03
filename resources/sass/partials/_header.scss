@@ -18,6 +18,15 @@ header {
       color: $blackColor;
       font-size: 30px;
       font-weight: 600;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
+  }
+  .hamburger i {
+    padding: 15px;
+    font-size: 40px;
+    color: $blackColor;
   }
 }

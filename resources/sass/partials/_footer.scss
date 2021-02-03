@@ -7,29 +7,6 @@ footer {
   .container {
     @include flexSet(row, flex-start, stretch);
 
-    .left {
-      width: 35%;
-    }
-    .right {
-      @include flexSet(row, flex-start, stretch);
-      width: 65%;
-
-      .list {
-        width: 50%;
-
-        h3 {
-          margin: 10px 0;
-        }
-        li {
-          margin: 10px 0;
-
-          a {
-            color: $footerColor;
-            font-weight: 600;
-          }
-        }
-      }
-    }
   }
 
   &::after {
@@ -39,6 +16,30 @@ footer {
     bottom: 0;
     width: 100%;
     height: 100px;
-    @include bgImageSet(footer-montagne-bottom, jpg, repeat, contain, left);
+    @include bgImageSet(footer-montagne-bottom, jpg, repeat-x, contain, left);
+  }
+}
+
+.left {
+  width: 40%;
+}
+.right {
+  @include flexSet(row, flex-start, stretch);
+  width: 60%;
+
+  .list {
+    width: 50%;
+
+    h3 {
+      margin: 10px 0;
+    }
+    li {
+      margin: 10px 0;
+
+      a {
+        color: $footerColor;
+        font-weight: 600;
+      }
+    }
   }
 }
