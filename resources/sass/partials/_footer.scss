@@ -2,6 +2,7 @@ footer {
   position: relative;
   padding: 80px 0 100px;
   background-color: #ffffff;
+  color: $footerColor;
 
   .container {
     @include flexSet(row, flex-start, stretch);
