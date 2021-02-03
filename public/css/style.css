@@ -98,10 +98,14 @@ footer .container {
   flex-wrap: wrap;
 }
 footer .container .left {
-  width: 35%;
+  width: calc(100% / 3);
+}
+footer .container .central {
+  width: calc(100% / 3);
+  background-color: yellow;
 }
 footer .container .right {
-  width: 65%;
+  width: calc(100% / 3);
   height: 500px;
   background-color: red;
 }

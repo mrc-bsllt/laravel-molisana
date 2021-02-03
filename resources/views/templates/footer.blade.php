@@ -18,6 +18,8 @@
       </p>
     </div>
 
+    <div class="central"></div>
+
     <div class="right"></div>
 
   </div>
