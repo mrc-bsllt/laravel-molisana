@@ -30,7 +30,14 @@
          </div>
        </main>
 
-       <footer></footer>
+       <footer>
+         <div class="container">
+
+           <div class="left"></div>
+           <div class="right"></div>
+           
+         </div>
+       </footer>
 
     </body>
 </html>
