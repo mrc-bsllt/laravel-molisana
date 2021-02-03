@@ -8,16 +8,27 @@ footer {
     @include flexSet(row, flex-start, stretch);
 
     .left {
-      width: calc(100% / 3);
-    }
-    .central {
-      width: calc(100% / 3);
-      background-color: yellow;
+      width: 35%;
     }
     .right {
-      width: calc(100% / 3);
-      height: 500px;
-      background-color: red;
+      @include flexSet(row, flex-start, stretch);
+      width: 65%;
+
+      .list {
+        width: 50%;
+
+        h3 {
+          margin: 10px 0;
+        }
+        li {
+          margin: 10px 0;
+
+          a {
+            color: $footerColor;
+            font-weight: 600;
+          }
+        }
+      }
     }
   }
 

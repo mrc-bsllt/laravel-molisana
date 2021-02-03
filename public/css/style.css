@@ -10,9 +10,10 @@ a {
   text-decoration: none;
 }
 
-.list-inline {
+ul {
   list-style: none;
 }
+
 .list-inline li {
   display: inline-block;
 }
@@ -23,7 +24,14 @@ li.active {
 
 .container {
   width: 70%;
+  height: 100%;
   margin: auto;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 header {
@@ -88,7 +96,7 @@ footer {
   position: relative;
   padding: 80px 0 100px;
   background-color: #ffffff;
-  color: #808080;
+  color: #969DA9;
 }
 footer .container {
   display: flex;
@@ -98,16 +106,28 @@ footer .container {
   flex-wrap: wrap;
 }
 footer .container .left {
-  width: calc(100% / 3);
-}
-footer .container .central {
-  width: calc(100% / 3);
-  background-color: yellow;
+  width: 35%;
 }
 footer .container .right {
-  width: calc(100% / 3);
-  height: 500px;
-  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 65%;
+}
+footer .container .right .list {
+  width: 50%;
+}
+footer .container .right .list h3 {
+  margin: 10px 0;
+}
+footer .container .right .list li {
+  margin: 10px 0;
+}
+footer .container .right .list li a {
+  color: #969DA9;
+  font-weight: 600;
 }
 footer::after {
   content: "";
