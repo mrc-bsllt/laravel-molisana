@@ -4,3 +4,19 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+.list-inline {
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
+li.active {
+  background-color: $lightBlueColor;
+}

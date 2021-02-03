@@ -1,7 +1,42 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-inline {
+  list-style: none;
+}
+.list-inline li {
+  display: inline-block;
+}
+
+li.active {
+  background-color: #B3E5FC;
+}
+
+header {
+  text-align: center;
+}
+header img {
+  margin: 50px 0;
+}
+header #nav-list > li {
+  margin: 0 10px;
+}
+header #nav-list > li:hover {
+  background-color: #B3E5FC;
+}
+header #nav-list > li a {
+  display: inline-block;
+  padding: 15px 10px;
+  color: #0E0E0E;
+  font-size: 30px;
+  font-weight: 600;
 }

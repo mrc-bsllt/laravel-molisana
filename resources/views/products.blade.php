@@ -8,6 +8,8 @@
     </head>
 
     <body>
+      
+       @include("templates.header")
 
     </body>
 </html>
