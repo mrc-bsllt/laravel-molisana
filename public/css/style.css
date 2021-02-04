@@ -85,23 +85,8 @@ header #nav-list li a {
 header #nav-list li a:hover {
   text-decoration: none;
 }
-header #nav-list > li {
-  margin: 0 10px;
-}
-header #nav-list > li:hover {
-  background-color: #B3E5FC;
-}
-header #nav-list > li a {
-  display: inline-block;
-  padding: 15px 10px;
-  color: #0E0E0E;
-  font-size: 30px;
-  font-weight: 600;
-}
-header #nav-list > li a:hover {
-  text-decoration: none;
-}
-header .hamburger i {
+
+.hamburger i {
   padding: 15px;
   font-size: 40px;
   color: #0E0E0E;
@@ -192,7 +177,7 @@ footer::after {
   height: 100px;
   background-image: url("../img/footer-montagne-bottom.jpg");
   background-repeat: repeat-x;
-  background-size: contain;
+  background-size: cover;
   background-position: left;
 }
 
