@@ -1,9 +1,9 @@
 <header>
   <img src="{{ asset('img/marchio-sito-test.png') }}" alt="logo-molisana">
   <ul id="nav-list" class="list-inline visible-lg-block">
-    <li><a href="#">Home</a></li>
-    <li class="active"><a href="#">Prodotti</a></li>
-    <li><a href="#">News</a></li>
+    <li class="{{ Route::currentRouteName() == 'home' ? 'active':'' }}"><a href="{{ route('home') }}">Home</a></li>
+    <li class="{{ Route::currentRouteName() == 'products' ? 'active':'' }}"><a href="{{ route('products', ['id' => 0]) }}">Prodotti</a></li>
+    <li class="{{ Route::currentRouteName() == 'news' ? 'active':'' }}"><a href="{{ route('news') }}">News</a></li>
   </ul>
   <div class="hamburger hidden-lg">
     <a href="#">
