@@ -57,7 +57,8 @@ Route::get('/products/{id}', function ($id) {
 
   return view("products", [
     "product" => $data[$id],
-    "id" => $id
+    "id" => $id,
+    "last_product" => count($data)-1
   ]);
 })->name("products");
 

@@ -1,5 +1,5 @@
 #product {
-
+  position: relative;
   padding: 20px 0;
   background-color: $productMainColor;
   color: $blueColor;
@@ -15,5 +15,19 @@
     text-align: left;
     font-size: 24px;
     font-weight: 600;
+  }
+  .prev {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translatey(-50%);
+    font-size: 50px;
+  }
+  .next {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translatey(-50%);
+    font-size: 50px;
   }
 }

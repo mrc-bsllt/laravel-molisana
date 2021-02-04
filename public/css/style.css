@@ -160,6 +160,7 @@ header #nav-list li a:hover {
 }
 
 #product {
+  position: relative;
   padding: 20px 0;
   background-color: #B7DAE5;
   color: #002D73;
@@ -175,6 +176,20 @@ header #nav-list li a:hover {
   text-align: left;
   font-size: 24px;
   font-weight: 600;
+}
+#product .prev {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translatey(-50%);
+  font-size: 50px;
+}
+#product .next {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translatey(-50%);
+  font-size: 50px;
 }
 
 footer {
