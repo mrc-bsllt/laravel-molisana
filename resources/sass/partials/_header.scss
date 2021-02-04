@@ -4,25 +4,31 @@ header {
   img {
     margin: 50px 0;
   }
+  
+  #nav-list {
+    margin: 0;
 
-  #nav-list > li {
-    margin: 0 10px;
-
-    &:hover {
-      background-color: $lightBlueColor;
-    }
-
-    a {
-      display: inline-block;
-      padding: 15px 10px;
-      color: $blackColor;
-      font-size: 30px;
-      font-weight: 600;
+    li {
+      margin: 0 10px;
 
       &:hover {
-        text-decoration: none;
+        background-color: $lightBlueColor;
+      }
+
+      a {
+        display: inline-block;
+        padding: 15px 10px;
+        color: $blackColor;
+        font-size: 30px;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
+  }
+
   }
   .hamburger i {
     padding: 15px;
