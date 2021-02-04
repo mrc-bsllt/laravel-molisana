@@ -35,7 +35,7 @@ h3 {
 }
 
 @media screen and (max-width: 1199px) {
-  main section .cards .card-container {
+  #products-main .card-container {
     width: calc(100% / 2);
   }
 
@@ -56,7 +56,7 @@ h3 {
   }
 }
 @media screen and (max-width: 767px) {
-  main section .cards .card-container {
+  #products-main .card-container {
     width: 100%;
   }
 }
@@ -88,17 +88,17 @@ header .hamburger i {
   color: #0E0E0E;
 }
 
-main {
+#products-main {
   padding: 50px 0;
   background-image: url("../img/fondo-pag-speciali.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-main section {
+#products-main section {
   padding: 10px 0;
 }
-main section h2 {
+#products-main section h2 {
   margin: 10px 0;
   font-size: 40px;
   color: #002D75;

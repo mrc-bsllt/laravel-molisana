@@ -2,7 +2,7 @@
 
 @section("content")
 
-<main>
+<main id="products-main">
   <div class="container">
 
     @foreach($types as $section)

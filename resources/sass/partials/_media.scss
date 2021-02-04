@@ -1,6 +1,6 @@
 @media screen and (max-width: 1199px) {
 
-  main section .cards .card-container {
+  #products-main .card-container {
     width: calc(100% / 2);
   }
 
@@ -15,7 +15,7 @@
   footer .container .right .list {
     width: 100%;
   }
-  
+
   footer .container .right .list:nth-child(2) {
     order: 3;
   }
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 767px) {
 
-  main section .cards .card-container {
+  #products-main .card-container {
     width: 100%;
   }
 
