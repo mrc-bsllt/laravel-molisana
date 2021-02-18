@@ -11,9 +11,9 @@
       <div class="cards">
         @foreach($section["type"] as $card)
         <div class="card-container">
-          <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
+          <img src="{{ $card->src }}" alt="{{ $card->titolo }}">
           <div class="layover">
-            <a href="{{ route('products', ['id' => $card['id']]) }}">{{ $card["titolo"] }}</a>
+            <a href="{{ route('products', ['slug' => $card->slug]) }}">{{ $card->titolo }}</a>
           </div>
         </div>
         @endforeach

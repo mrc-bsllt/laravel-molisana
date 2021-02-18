@@ -13,54 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get("/", "PastaController@index")->name("home");
 
-  $data = config("db-paste");
-
-  $lunghe = [];
-  $corte = [];
-  $cortissime = [];
-
-  foreach ($data as $index => $pasta) {
-    $pasta["id"] = $index;
-
-    if($pasta["tipo"] == "lunga") {
-      $lunghe[] = $pasta;
-    } elseif($pasta["tipo"] == "corta") {
-      $corte[] = $pasta;
-    } elseif($pasta["tipo"] == "cortissima") {
-      $cortissime[] = $pasta;
-    }
-  }
-
-  return view('home', [
-    "types" => [
-      [
-        "title" => "lunghe",
-        "type" => $lunghe
-      ],
-      [
-        "title" => "corte",
-        "type" => $corte
-      ],
-      [
-        "title" => "cortissime",
-        "type" => $cortissime
-      ],
-    ]
-  ]);
-})->name("home");
-
-Route::get('/products/{id}', function ($id) {
-
-  $data = config("db-paste");
-
-  return view("products", [
-    "product" => $data[$id],
-    "id" => $id,
-    "last_product" => count($data)-1
-  ]);
-})->name("products");
+Route::get("/products/{slug?}", "PastaController@show")->name("products");
 
 Route::get('/news', function () {
   return view("news");
